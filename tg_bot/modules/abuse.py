@@ -5,10 +5,10 @@ from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 SFW_STRINGS = (
-    "പോടാ പട്ടി",
-    "ഡാ പന്നി ",
-    "പുന്നാര മോനെ",
-    "പോടാ മാക്രി",
+    "Madharchod",
+    " I don't have authority to chat with an asshole, Apologies",
+    "╭∩╮(-_-)╭∩╮",
+    "Not in a mood to abuse, I ain't gonna use my database on that shit guy.",
     "പോടാ നാറി",
     "വാടാ ... പട്ടീ",
     "പോയി ചാവടാ",
