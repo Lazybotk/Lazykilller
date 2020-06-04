@@ -17,11 +17,11 @@ SFW_STRINGS = (
     "Nigga",
     "Ur dad gey bc",
     "htt bhoxdike",
-    "മണ്ണുണ്ണി",
-    "ഡാ പന്നക്കിളവ",
-    " നിന്റെ കുഞ്ഞമ്മേടെ നായർ",
-    "നിന്റെ അപ്പൂപ്പനോട്‌ പോയി പറ",
-    "പോ മലരേ"
+    "Teri g**nd me kaunsa bongoli keeda ghusa ki ye chutiyapanti kar rha h",
+    "Ur granny tranny",
+    " Relax your Rear,ders nothing to fear,The Rape train is finally here",
+    "CUnt",
+    "you noob",
   )
 
 @run_async
@@ -34,7 +34,7 @@ def dark(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- /abuse  🤬.
+- /dark  🤬.
 """
 
 __mod_name__ = "Abuse"
