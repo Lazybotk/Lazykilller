@@ -42,7 +42,9 @@ I AM A GROUP MANAGER BOT MAINTAINED BY
 
 HIT HELP FOR COMMANDS  /help
 
-I AM COMPLETELY OPEN SOURCE
+If you need any support or help
+
+[HERE] (@sararp_BotGroup)
 
 
 
