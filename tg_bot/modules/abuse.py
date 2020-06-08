@@ -25,7 +25,7 @@ SFW_STRINGS = (
   )
 
 @run_async
-def dark(bot: Bot, update: Update):
+def abuse(bot: Bot, update: Update):
     bot.sendChatAction(update.effective_chat.id, "typing") # Bot typing before send messages
     message = update.effective_message
     if message.reply_to_message:
@@ -34,11 +34,11 @@ def dark(bot: Bot, update: Update):
       message.reply_text(random.choice(SFW_STRINGS))
 
 __help__ = """
-- /dark  🤬.
+- /abuse  🤬.
 """
 
 __mod_name__ = "Abuse"
 
-DARK_HANDLER = DisableAbleCommandHandler("dark", dark)
+ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
-dispatcher.add_handler(DARK_HANDLER)
+dispatcher.add_handler(ABUSE_HANDLER)
