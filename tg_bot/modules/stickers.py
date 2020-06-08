@@ -73,7 +73,7 @@ def kang(bot: Bot, update: Update, args: List[str]):
         else:
             msg.reply_text("Yea, I can't kang that.")
         stolen_file = bot.get_file(file_id)
-        stolen_file.download('stolensticker.png')
+        stolen_file.download('kangsticker.png')
         if args:
             sticker_emoji = str(args[0])
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
@@ -116,7 +116,7 @@ def kang(bot: Bot, update: Update, args: List[str]):
             elif e.message == "Sticker_png_dimensions":
                 im.save(kangsticker, "PNG")
                 bot.add_sticker_to_set(user_id=user.id, name=packname,
-                                        png_sticker=open('stolensticker.png', 'rb'), emojis=sticker_emoji)
+                                        png_sticker=open('kangsticker.png', 'rb'), emojis=sticker_emoji)
                 msg.reply_text(f"Sticker successfully added to [pack](t.me/addstickers/{packname})" +
                                 f"\nEmoji is: {sticker_emoji}", parse_mode=ParseMode.MARKDOWN)
             elif e.message == "Invalid sticker emojis":
@@ -162,7 +162,7 @@ def kang(bot: Bot, update: Update, args: List[str]):
             msg.reply_text(f"Sticker successfully added to [pack](t.me/addstickers/{packname})" +
                             f"\nEmoji is: {sticker_emoji}", parse_mode=ParseMode.MARKDOWN)
         except OSError as e:
-            msg.reply_text("I can only steal images, dude.")
+            msg.reply_text("I can only kang images, dude.")
             print(e)
             return
         except TelegramError as e:
