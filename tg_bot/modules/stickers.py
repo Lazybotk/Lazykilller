@@ -81,7 +81,7 @@ def kang(bot: Bot, update: Update, args: List[str]):
         else:
             sticker_emoji = "🤔"
         try:
-            im = Image.open(stolensticker)
+            im = Image.open(kangsticker)
             maxsize = (512, 512)
             if (im.width and im.height) < 512:
                 size1 = im.width
