@@ -44,7 +44,7 @@ def getsticker(bot: Bot, update: Update):
 
 
 @run_async
-def steal(bot: Bot, update: Update, args: List[str]):
+def kang(bot: Bot, update: Update, args: List[str]):
     msg = update.effective_message
     user = update.effective_user
     packnum = 0
@@ -62,7 +62,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
         except TelegramError as e:
             if e.message == "Stickerset_invalid":
                 packname_found = 1
-    stolensticker = "stolensticker.png"
+    stolensicker = "stolensticker.png"
     if msg.reply_to_message:
         if msg.reply_to_message.sticker:
             file_id = msg.reply_to_message.sticker.file_id
@@ -231,14 +231,14 @@ def makepack_internal(msg, user, png_sticker, emoji, bot, packname, packnum):
 __help__ = """
 - /stickerid: reply to a sticker to get its ID.
 - /getsticker: reply to a sticker to get the raw PNG image.
-- /steal: reply to a sticker or image to add it to your pack.
+- /kang: reply to a sticker or image to add it to your pack.
 """
 
 __mod_name__ = "Stickers"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
-STEAL_HANDLER = DisableAbleCommandHandler("steal", steal, pass_args=True, admin_ok=False)
+KANG_HANDLER = DisableAbleCommandHandler("kang", kang, pass_args=True, admin_ok=False)
 
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
-dispatcher.add_handler(STEAL_HANDLER)
+dispatcher.add_handler(KANG_HANDLER)
