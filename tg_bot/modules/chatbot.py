@@ -11,11 +11,11 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.error import BadRequest, Unauthorized, RetryAfter
 from telegram.utils.helpers import mention_html
 
-from SaitamaRobot import dispatcher, AI_API_KEY, OWNER_ID, SUPPORT_CHAT
-import SaitamaRobot.modules.sql.chatbot_sql as sql
-from SaitamaRobot.modules.log_channel import gloggable
-from SaitamaRobot.modules.helper_funcs.filters import CustomFilters
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
+from tg_bot import dispatcher, AI_API_KEY, OWNER_ID, SUPPORT_CHAT
+import tg_bot.modules.sql.chatbot_sql as sql
+from tg_bot.modules.log_channel import gloggable
+from tg_bot.modules.helper_funcs.filters import CustomFilters
+from tg_bot.modules.helper_funcs.chat_status import user_admin
 
 CoffeeHouseAPI = API(AI_API_KEY)
 api_client = LydiaAI(CoffeeHouseAPI)
@@ -125,7 +125,7 @@ def list_chatbot_chats(bot: Bot, update: Update):
 __mod_name__ = "Chatbot"
 
 __help__ = f"""
-Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a more interactive group chat experience.
+Chatbot utilizes the CoffeeHouse API and allows Sara to talk and provides a more interactive group chat experience.
 
 *Commands:* 
 *Admins only:*
@@ -135,7 +135,7 @@ Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a m
 *Dragons or higher only:* 
  • `/listaichats`*:* Lists the chats the chatmode is enabled in.
 
-Reports bugs at {SUPPORT_CHAT}
+
 *Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/) from @Intellivoid
 """         
 
