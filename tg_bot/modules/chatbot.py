@@ -11,7 +11,7 @@ from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.error import BadRequest, Unauthorized, RetryAfter
 from telegram.utils.helpers import mention_html
 
-from tg_bot import dispatcher, AI_API_KEY, OWNER_ID, 
+from tg_bot import dispatcher, AI_API_KEY,OWNER_ID
 import tg_bot.modules.sql.chatbot_sql as sql
 from tg_bot.modules.log_channel import gloggable
 from tg_bot.modules.helper_funcs.filters import CustomFilters
