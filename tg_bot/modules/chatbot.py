@@ -150,4 +150,4 @@ LIST_CB_CHATS_HANDLER = CommandHandler("listaichats", list_chatbot_chats, filter
 dispatcher.add_handler(ADD_CHAT_HANDLER)
 dispatcher.add_handler(REMOVE_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOT_HANDLER)
-dispatcher.add_handler(LIST_CB_CHATS_HANDLER)
+
