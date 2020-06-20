@@ -15,7 +15,7 @@ from io import BytesIO
 from zalgo_text import zalgo
 import os
 from pathlib import Path
-import nekos
+
 
 from telegram import Bot, Update, ParseMode, Message
 from telegram.ext import run_async
