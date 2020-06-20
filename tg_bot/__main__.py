@@ -43,7 +43,7 @@ I AM A GROUP MANAGER BOT MAINTAINED BY
 HIT HELP FOR COMMANDS  /help
 
 
-The support group chat is at @SarasupportGroup
+THE SUPPORT GROUP CHAT IS AT @Sararprobot
 
 
 
