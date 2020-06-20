@@ -316,10 +316,14 @@ ABUSE_STRINGS = (
     "Stfu and Gtfo U nub",
     "GTFO bsdk",
     "CUnt",
-    " Gay is here",
+    "Gay is here",
     "Ur dad gey bc ",
+    "htt bhoxdike",
+    "Error:404 This nigga is gey af, my system can't handle such gayness. Bot Quiting",
+    "U R Dad lesbo",
+    "I don't have authority to chat with an asshole, Apologies",
+    
 )
-
 INSULT_STRINGS = [
     "Owww ... Such a stupid idiot.",
     "Don't drink and type.",
