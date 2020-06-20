@@ -27,7 +27,7 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.extraction import extract_user
 
 import nltk
-from deeppyer import deepfry
+
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
