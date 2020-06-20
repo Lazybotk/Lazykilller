@@ -43,7 +43,7 @@ I AM A GROUP MANAGER BOT MAINTAINED BY
 HIT HELP FOR COMMANDS  /help
 
 
--> Report [Lynda Support](https://t.me/SarasupportGroup) if I go offline
+Report [Sara Support](https://t.me/SarasupportGroup) if I go offline
 
 
 [
