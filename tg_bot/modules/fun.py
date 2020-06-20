@@ -401,7 +401,7 @@ def slap(bot: Bot, update: Update, args: List[str]):
     curr_user = html.escape(message.from_user.first_name)
     user_id = extract_user(message, args)
 
-    if user_id == bot.id:
+    if user_id == owner.id:
         temp = random.choice(fun_strings.SLAP_Kigyō_TEMPLATES)
 
         if isinstance(temp, list):
