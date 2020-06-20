@@ -43,7 +43,7 @@ I AM A GROUP MANAGER BOT MAINTAINED BY
 HIT HELP FOR COMMANDS  /help
 
 
-Report [Sara Support](https://t.me/SarasupportGroup) if I go offline
+UPDATE CHANNEL @Sararprobot
 
 
 [
@@ -161,7 +161,7 @@ def start(bot: Bot, update: Update, args: List[str]):
 
 
     else:
-        update.effective_message.reply_text("yo,whadup?🤧")
+        update.effective_message.reply_text("yo,whadup?😏")
 
 
 def send_start(bot, update):
