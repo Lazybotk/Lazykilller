@@ -22,7 +22,7 @@ I am an Anime themed group management bot with some fun extras [;)](https://tele
 
 You can find the list of available commands with /help.
 
-[Kigyō's Repo](https://github.com/Dank-del/EnterpriseALRobot) 
+
 
 The update channel @Sararprobot
 """
