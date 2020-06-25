@@ -17,12 +17,11 @@ from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
+Hi {}, my name is {}!  
+
 I am an Anime themed group management bot with some fun extras [;)](https://telegra.ph/file/ab9a089aaec37716c913f.jpg)
 
 You can find the list of available commands with /help.
-
-
 
 The update channel @Sararprobot
 """
@@ -33,9 +32,6 @@ I'm a part of [Sararp](https://telegra.ph/file/cdec177155100460cc8c7.jpg)
 
 Have a look at the following for an idea of some of \
 the things I can help you with.
-
-
-
 
 *Main* commands available:
  - /start: start the bot
