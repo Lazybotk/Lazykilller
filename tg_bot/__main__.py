@@ -23,7 +23,7 @@ I am an Anime themed group management bot with some fun extras [;)](https://tele
 
 You can find the list of available commands with /help.
 
-The update channel @Sararprobot
+ update channel @Sararprobot
 """
 
 HELP_STRINGS = """
