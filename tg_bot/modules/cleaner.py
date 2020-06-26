@@ -5,10 +5,10 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from tg_bot import ALLOW_EXCL, dispatcher, CustomCommandHandler
-from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
-from tg_bot.modules.sql import cleaner_sql as sql
+from SaitamaRobot import ALLOW_EXCL, dispatcher, CustomCommandHandler
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
+from SaitamaRobot.modules.sql import cleaner_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ('/', '!')
@@ -197,14 +197,15 @@ def bluetext_ignore_list(bot: Bot, update: Update):
 
 
 __help__ = """
- - /cleanblue <on/off/yes/no> - clean commands after sending
- - /ignoreblue <word> - prevent auto cleaning of the command
- - /unignoreblue <word> - remove prevent auto cleaning of the command
- - /listblue - list currently whitelisted commands
+Blue text cleaner removed any made up commands that people send in your chat.
+ • `/cleanblue <on/off/yes/no>`*:* clean commands after sending
+ • `/ignoreblue <word>`*:* prevent auto cleaning of the command
+ • `/unignoreblue <word>`*:* remove prevent auto cleaning of the command
+ • `/listblue`*:* list currently whitelisted commands
  
- Following are Disasters only commands, admins cannot use these:
-  - /gignoreblue <word> - globally ignore bluetext cleaning.
- - /ungignoreblue <word> - remove said command from global cleaning list
+ *Following are Disasters only commands, admins cannot use these:*
+ • `/gignoreblue <word>`*:* globally ignorea bluetext cleaning of saved word across Saitama.
+ • `/ungignoreblue <word>`*:* remove said command from global cleaning list
 """
 
 SET_CLEAN_BLUE_TEXT_HANDLER = CommandHandler("cleanblue", set_blue_text_must_click, pass_args=True)
