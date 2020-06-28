@@ -30,7 +30,7 @@ if is_module_loaded(FILENAME):
 
                 if message.chat.type == chat.SUPERGROUP and message.chat.username:
                     result += f'\n<b>Link:</b> <a href="https://t.me/{chat.username}/{message.message_id}">click here</a>'
-                log_chat = sql.get_chat_log_channel(chat.id)
+                log_chat = .get_chat_log_channel(chat.id)
                 if log_chat:
                     send_log(bot, log_chat, chat.id, result)
             elif result == "":
