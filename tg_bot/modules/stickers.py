@@ -11,9 +11,9 @@ from telegram import Update, Bot
 from telegram.ext import run_async
 from telegram.utils.helpers import escape_markdown
 
-from haruka import dispatcher
-from haruka.modules.disable import DisableAbleCommandHandler
-from haruka.modules.tr_engine.strings import tld
+from SaitamaRobot import dispatcher
+from SaitamaRobot.modules.disable import DisableAbleCommandHandler
+from SaitamaRobot.modules.tr_engine.strings import tld
 
 
 @run_async
