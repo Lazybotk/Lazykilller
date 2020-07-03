@@ -13,15 +13,15 @@ import alluka.modules.sql.welcome_sql as sql
 import alluka.modules.sql.global_bans_sql as gbansql
 import alluka.modules.sql.users_sql as userssql
 
-from alluka import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
-from alluka.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
-from alluka.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
-from alluka.modules.helper_funcs.msg_types import get_welcome_type
-from alluka.modules.helper_funcs.extraction import extract_user
-from alluka.modules.disable import DisableAbleCommandHandler
-from alluka.modules.helper_funcs.filters import CustomFilters
-from alluka.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
-from alluka.modules.log_channel import loggable
+from tg_bot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
+from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
+from tg_bot.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
+from tg_bot.modules.helper_funcs.msg_types import get_welcome_type
+from tg_bot.modules.helper_funcs.extraction import extract_user
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot.modules.helper_funcs.filters import CustomFilters
+from tg_bot.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
+from tg_bot.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
