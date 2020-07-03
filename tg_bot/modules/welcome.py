@@ -2,16 +2,16 @@ import html, time
 import re
 from typing import Optional, List
 
-import alluka.modules.helper_funcs.cas_api as cas
+import tg_bot.modules.helper_funcs.cas_api as cas
 
-from telegram import Message, Chat, Update, Bot, User, CallbackQuery, ChatMember, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, MessageEntity
+from tg_bot import Message, Chat, Update, Bot, User, CallbackQuery, ChatMember, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, MessageEntity
 from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler
 from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
 
-import alluka.modules.sql.welcome_sql as sql
-import alluka.modules.sql.global_bans_sql as gbansql
-import alluka.modules.sql.users_sql as userssql
+import tg_bot.modules.sql.welcome_sql as sql
+import tg_bot.modules.sql.global_bans_sql as gbansql
+import tg_bot.modules.sql.users_sql as userssql
 
 from tg_bot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
 from tg_bot.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
