@@ -110,18 +110,10 @@ def list_chatbot(bot: Bot, update: Update):
 
 
 
-__help__ = """
-Chatbot utilizes the CoffeeHouse API and allows Lynda to talk back making your chat more interactive.
-This is an ongoing upgrade and is only available in your chats if you reach out to @YorktownEagleUnion and ask for it.
-In future we might make it open for any chat and controllable by group admins.
-Powered by CoffeeHouse (https://coffeehouse.intellivoid.net/) from @Intellivoid
-Commands: These only work for Lynda Staff users.
- - /addchat : Enables Chatbot mode in the chat.
- - /rmchat  : Disables Chatbot mode in the chat.
 
-*Nation Level Required:* 
- - /listai :  Lists the chats the chatmode is enabled in.
-"""
+
+
+
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)
 REMOVE_CHAT_HANDLER = CommandHandler("rmchat", remove_chat)
