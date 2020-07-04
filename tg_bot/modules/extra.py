@@ -478,7 +478,7 @@ Example syntax: /cash 1 USD INR
  - /cash : currency converter
 
 **Wallpapers: **
- - /wall <query>: get a wallpaper from wall.alphacoders.com
+ - /wall <query>: get a wallpaper 
 
 **Google Reverse Search: **
  - /reverse: Does a reverse image search of the media which it was replied to.
