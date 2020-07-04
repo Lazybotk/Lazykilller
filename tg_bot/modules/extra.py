@@ -12,8 +12,8 @@ import requests
 from typing import Optional, List
 from telegram import ParseMode, InputMediaPhoto, Update, Bot, TelegramError, ChatAction
 from telegram.ext import CommandHandler, run_async
-from lynda import dispatcher, TIME_API_KEY, CASH_API_KEY, WALL_API
-from lynda.modules.disable import DisableAbleCommandHandler
+from tg_bot import dispatcher, TIME_API_KEY, CASH_API_KEY, WALL_API
+from tg_bot.modules.disable import DisableAbleCommandHandler
 
 opener = urllib.request.build_opener()
 useragent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.38 Safari/537.36'
