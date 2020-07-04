@@ -424,7 +424,7 @@ def wall(bot: Bot, update: Update, args):
         json_rep = requests.get(
             f"https://wall.alphacoders.com/api2.0/get.php?auth={WALL_API}&method=search&term={term}").json()
         if not json_rep.get("success"):
-            msg.reply_text("An error occurred! Report this @LyndaEagleSupport")
+            msg.reply_text("An error occurred! Report this @Sararprobot")
         else:
             wallpapers = json_rep.get("wallpapers")
             if not wallpapers:
