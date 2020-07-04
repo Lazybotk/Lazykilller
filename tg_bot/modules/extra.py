@@ -486,10 +486,6 @@ Example syntax: /cash 1 USD INR
 **Text-to-Speach**
  - /tts <sentence>:  Text to Speech!
 
-**Last FM:**
- - /setuser <username>: sets your last.fm username.
- - /clearuser: removes your last.fm username from the bot's database.
- - /lastfm: returns what you're scrobbling on last.fm.
 
 **Playstore:**
  - /app <app name>: finds an app in playstore for you
