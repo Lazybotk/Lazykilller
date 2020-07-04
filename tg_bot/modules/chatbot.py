@@ -9,10 +9,10 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.error import BadRequest, Unauthorized, RetryAfter
 
-from lynda import dispatcher, AI_API_KEY, OWNER_ID
-import lynda.modules.sql.chatbot_sql as sql
-from lynda.modules.helper_funcs.chat_status import user_admin
-from lynda.modules.helper_funcs.filters import CustomFilters
+from tg_bot import dispatcher, AI_API_KEY, OWNER_ID
+import tg_bot.modules.sql.chatbot_sql as sql
+from tg_bot.modules.helper_funcs.chat_status import user_admin
+from tg_bot.modules.helper_funcs.filters import CustomFilters
 
 
 CoffeeHouseAPI = API(AI_API_KEY)
@@ -108,7 +108,7 @@ def list_chatbot(bot: Bot, update: Update):
             sleep(e.retry_after)
     update.effective_message.reply_text(text, parse_mode="HTML")
 
-__mod_name__ = "Chatbot"
+
 
 __help__ = """
 Chatbot utilizes the CoffeeHouse API and allows Lynda to talk back making your chat more interactive.
